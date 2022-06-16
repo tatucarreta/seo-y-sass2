@@ -1,0 +1,20 @@
+main{
+    h2{
+        .parrafo1{
+            @extend .parrafo2;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: $size;
+            color: $colortext;
+            width: 100px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .parrafo2{
+            @extend .parrafo3;
+        }
+        .lista{
+            list-style-type: square;
+            font-size: $size;
+        }
+    }
+}
